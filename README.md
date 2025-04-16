@@ -92,7 +92,7 @@
 <h2>Механизм распределения задач и балансировки</h2>
 
 <ul>
-  <li>Каждая рабочая нить привязана к <strong>своей очереди</strong> (<code>BlockingQueue&lt;Runnable&gt;</code>)</li>
+  <li>Каждый рабочий поток привязан к <strong>своей очереди</strong> (<code>BlockingQueue&lt;Runnable&gt;</code>)</li>
   <li>Задачи распределяются по принципу <strong>Round Robin</strong>: <code>Task_0 → Queue_0</code>, <code>Task_1 → Queue_1</code> и т.д.</li>
   <li>Преимущества:
     <ul>
