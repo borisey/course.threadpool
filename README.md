@@ -81,10 +81,6 @@
     <td><code>corePoolSize = 4</code>, <code>maxPoolSize = 8</code>, <code>queueSize = 20</code></td>
     <td>Высокая устойчивость к пиковым нагрузкам, но рост накладных расходов</td>
   </tr>
-  <tr>
-    <td><code>minSpareThreads = 2</code></td>
-    <td>Уменьшает пиковую задержку на старте, ускоряет реакцию пула</td>
-  </tr>
 </table>
 
 <p><strong>Рекомендация:</strong> оптимальные значения — <code>corePoolSize = 2–4</code>, <code>maxPoolSize = 4–8</code>, <code>queueSize = 5–10</code>, <code>minSpareThreads = 1–2</code> для приложений с умеренной многозадачностью.</p>
